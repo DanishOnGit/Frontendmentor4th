@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+:root{
+    --Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+body{
+    background-image: url("design/desktop-design.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 78vw;
+    height: 84vh;
+    border: 1px solid black;
+    
+}
+.header_div{
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.heading{
+    font-weight: 200;
+    line-height: 2.5rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.5rem;
+}
+small{
+        line-height: 0.1rem;
+}
+.features_div{
+    margin-top: 1.5rem;
+    opacity: 0.5;
+    height:70%;
+    /* background-color: coral; */
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0.5rem;
+}
+.text{
+    font-size: 0.7rem;
+}
+.feature_styling{
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+    border: 1px solid blue;
+    border-top: 0.2rem solid var(--Cyan) ;
+    border-style: inset;
+    border-radius: 0.5rem;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.supervisor,.center,.calculator{
+    flex: 1;
+}
+.supervisor{
+    flex-basis: 33%;
+    padding: 1rem 1.5rem;
+    /* margin-right: 1rem; */
+    border: 1px solid blue;
+    border-top: 0.2rem solid var(--Cyan) ;
+    border-style: inset;
+    border-radius: 0.5rem;
+}
+.description{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.text{
+    line-height: 1rem;
+}
+.icons{
+    text-align: right;
+}
+.center{
+    flex-basis: 33%;
+    border: 1px solid rebeccapurple;
+}
+.calculator{
+    flex-basis: 33%;
+    border: 1px solid red;
+}
