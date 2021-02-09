@@ -56,67 +56,10 @@ p{
     align-items:center;
     padding: 0.5rem;
 }
-@media (max-width:700px){
-    .main{
-        width: 90vw;
-    }
-   .features_div{
-       display: block;
-   }
-   .center{
-       display: block;
-       
-   }
-   .team{
-       margin-bottom:0;
-   }
-   .header_div{
-       width: 100%;
-   }
-   .feature_styling{
-       margin:0.5rem;
-   }
-   .heading,.subheading{
-       font-size: 1.5rem;
-       /* line-height: unset; */
-   }
-   .subheading{
-       font-size: 0.8rem;
-   }
-}
-@media (max-width:320px){
-    .heading{
-        font-size: 1.2rem;
-    }
-    .subheading{
-        font-size: 0.7rem;
-    }
-}
 
-@media (min-width:701px) and (max-width:1025px){
-    .main{
-        width: 90vw;
-    }
-    .header_div{
-        width:50%;
-    }
-    .feature_styling{
-        margin:0.5rem;
-    }
-    .heading,.subheading{
-        font-size: 1.5rem;
-        /* line-height:1; */
-    }
-    .subheading{
-        font-size: 0.8rem;
-    }
-}
-@media (min-width:1023px) and (max-width:1100px){
 
-    .heading{
-        font-size:2rem;
-    }
-}
+
+
 .text{
     font-size: 0.7rem;
 }
@@ -166,6 +109,65 @@ p{
 }
 .icons{
     text-align: right;
+}
+
+/* Media queries */
+
+@media  (max-width:700px){
+    .main{
+        width: 90vw;
+    }
+   .features_div{
+       display: block;
+   }
+   .center{
+       display: block;
+       
+   }
+   .team{
+       margin-bottom:0;
+   }
+   .header_div{
+       width: 100%;
+   }
+   .feature_styling{
+       margin:1rem 0rem;
+   }
+   .heading,.subheading{
+       font-size: 1.5rem;
+   }
+   .subheading{
+       font-size: 0.8rem;
+   }
+}
+@media (min-width:701px) and (max-width:1025px){
+    .main{
+        width: 90vw;
+    }
+    .header_div{
+        width:50%;
+    }
+    .team{
+        margin-bottom: 0;
+    }
+    .feature_styling{
+        margin:1rem 0rem;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .subheading{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width:1023px) and (max-width:1100px){
+
+    .heading{
+        font-size:2rem;
+    }
+    .team{
+        margin-bottom: 0;
+    }
 }
 
 
