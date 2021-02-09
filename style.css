@@ -6,31 +6,33 @@
     font-family: 'Poppins', sans-serif;;
 }
 :root{
-    --Red: hsl(0, 78%, 62%);
+ --Red: hsl(0, 78%, 62%);
 --Cyan: hsl(180, 62%, 55%);
 --Orange: hsl(34, 97%, 64%);
 --Blue: hsl(212, 86%, 64%);
-    --Very-Dark-Blue: hsl(234, 12%, 34%);
+ --Very-Dark-Blue: hsl(234, 12%, 34%);
 --GrayishBlue: hsl(229, 6%, 66%);
 --VeryLightGray: hsl(0, 0%, 98%);
 }
 body{
-    background-image: url("design/desktop-design.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--Very-Dark-Blue);
+    background-color: var(--VeryLightGray);
 }
 .main{
     width: 78vw;
     height: 84vh;
-    border: 1px solid black;
-    
 }
+p{
+    color:var(--GrayishBlue);
+}
+
+/* styling the heading and subheading */
 .header_div{
-    width: 45%;
+    width: 42%;
     text-align: center;
     margin: auto;
     
@@ -42,50 +44,74 @@ body{
     color: var(--Very-Dark-Blue);
     margin-bottom: 0.5rem;
 }
-small{
-        line-height: 0.1rem;
+.subheading{
+        font-size: 0.8rem;
+        line-height:1.5;
 }
+
+/* styling the features section */
 .features_div{
     margin-top: 1.5rem;
-    opacity: 0.5;
-    height:70%;
-    /* background-color: coral; */
     display: flex;
-    justify-content: space-between;
     align-items:center;
     padding: 0.5rem;
+}
+@media (max-width:600px){
+   .features_div{
+       display: block;
+   }
+   .center{
+       display: block;
+   }
+   .header_div{
+       width: 100%;
+   }
+   .feature_styling{
+       margin:0.5rem
+   }
 }
 .text{
     font-size: 0.7rem;
 }
 .feature_styling{
     padding: 1rem 1.5rem;
-    margin-right: 1rem;
-    border: 1px solid blue;
-    border-top: 0.2rem solid var(--Cyan) ;
     border-style: inset;
     border-radius: 0.5rem;
+    margin: 0 0.7rem;
+    background-color:white;
+    box-shadow: 0px 7px 12px 0px hsla(234, 12%, 34%, 0.479);
 }
-
+.feature_styling h4{
+    margin-bottom: 0.5rem;
+}
 .center{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
-.supervisor,.center,.calculator{
-    flex: 1;
-}
+
 .supervisor{
-    flex-basis: 33%;
-    padding: 1rem 1.5rem;
-    /* margin-right: 1rem; */
-    border: 1px solid blue;
-    border-top: 0.2rem solid var(--Cyan) ;
-    border-style: inset;
-    border-radius: 0.5rem;
+    flex-basis: 33.333%;
+    border-top: 0.2rem solid var(--Cyan);
 }
+.center{
+    flex-basis: 33.333%;
+}
+.calculator{
+    flex-basis: 33.333%;
+    border-top: 0.2rem solid var(--Blue) ;
+}
+.team{
+    border-top: 0.2rem solid var(--Red) ;
+    margin-bottom: 1.4rem;
+}
+.karma{
+    border-top: 0.2rem solid var(--Orange); 
+}
+
+/* styling content inside feature boxes */
 .description{
-    width: 80%;
+    width: 83%;
     margin-bottom: 2rem;
 }
 .text{
@@ -94,11 +120,5 @@ small{
 .icons{
     text-align: right;
 }
-.center{
-    flex-basis: 33%;
-    border: 1px solid rebeccapurple;
-}
-.calculator{
-    flex-basis: 33%;
-    border: 1px solid red;
-}
+
+
